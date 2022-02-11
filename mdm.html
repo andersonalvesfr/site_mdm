@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Patreon MDM</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+		<header>
+			<h1 class=banner><img src="Imagens\Banner.jpg" alt="Banner MDM"> </h1>
+				
+		</header>
+
+		<main>
+			<h1>Bem-vindo ao Patreon do MDM</h1>
+			<p class="text-chamada">Sim! Finalmente o MDM se rendeu a modinha e deseja "monetizar" com a "produção do seu conteúdo", e para isso precisamos da sua ajuda caro ouvinte. É bem simples, se você gosta ou não dos podcasts do MDM coloque os dados do seu cartão de crédito e você recebará recompensas exclusivas, entre elas um pastel de feira, acesso ao grupo secreto do surubão, e possibilidade de baixar todos, sim, todos os podcasts já publicados, inclusive os que ainda não foram gravados, além que fomentar a produção de conteúdo podquestal independente e NERD (grandes merdas...)!!!</p>
+			
+			<table class="tabela">
+				<thead>
+					<tr>
+						<th>Apoio</th>
+						<th>Recompensas</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>A partir de 2 reais</td>
+						<td>Acesso a todos os vídeos já publicados pelo MDM no youtube</td>
+					</tr>
+					<tr>
+						<td>A partir de 20 reais</td>
+						<td>Acesso exclusivo a todo conteúdo do site pudim.com.br</td>
+					</tr>
+					<tr>
+						<td>A partir de 30 reais</td>
+						<td>Narração exclusiva de um trecho de 10s de uma corrida de fórmula 1</td>
+					</tr>
+					<tr>
+						<td>A partir de 50 reais</td>
+						<td>Caixa-box com os melhores quadrinhos de todo o mundo, segundo </td>
+					</tr>
+					<tr>
+						<td>A partir de 200 reais</td>
+						<td>Sua mãe!</td>
+					</tr>
+					<tr>
+						<td>A partir de 300 reais (tá sobrando hein...)</td>
+						<td>Conjunto de Disquetes com o podcast MDM 24 horas</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<form> <!--Para fomulários-->
+				<legend>Insira seu nome como aparece no cartão de crédito</legend>
+				<label for="nomeSobrenome">Nome e sobrenome</label> <!--Vem antes da input o for conecta a label com a input-->		
+				<input type="text" id="nomeSobrenome" class="input-padrao" required>
+				
+				<label for="numero1">Número do cartão de crédito</label>
+				<input type="number" id="numero1" class="input-padrao" required placeholder="XXX.XXXX.XXXX.XXXX">
+
+				<label for="numero2">Data do vencimento do cartão</label>
+				<input type="month" id="numero2" class="input-padrao" required placeholder="XX(MÊS)/XXXX(ANO)">
+
+				<label for="email">Endereço de Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuEmail@dominio.com">
+
+				<label for="email">Confirme seu endereço de Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuEmail@dominio.com">
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+
+				<fieldset>
+					<legend>Vai ajudar com quanto?</legend>
+					<select>
+						<option>Uns 20 conto</option>
+						<option>Uns 30 conto</option>
+						<option>Uns 50 conto</option>
+						<option>Um café e pão na chapa no centro de São Paulo</option>
+					</select>
+				</fieldset>
+
+				<div class="opicoes">
+					<!--Check-Box, dessa vez a entrada foi incluida no laber, assim, não precisa de indentificador para vincular os dois-->
+					<label class="checkbox"><input type="checkbox" checked> Caro lamentavél, gostaria de receber uma notificação por SMS quando nosso podcast é publicado?</label>
+
+					<label class="checkbox"><input type="checkbox" checked> Gostaria de receber uma notificação quando sua recompensa estiver pronta?</label>
+				</div>
+
+				<input type="submit" value="Enviar dados" class="enviar"><!--Input para enviar os dados o value descreve o texto do botão-->		
+
+			</form>
+
+
+		</main>
+
+
+		<footer> <!--Rodapé-->
+			<img class= "imagem-rodape" src="Imagens\MDM-logo.png" alt="Logo MDM" >
+			<p class=copyright>MDM&copy; talvez seja uma marca registrada, acho que não, o conteúdo aqui não represententa a opinião ou possui qualquer relação oficial com os produtores do site melhoresdomundo.net, sendo criado somente com fins educacionais, para aplicação de conceitos em HTML e CSS</p>
+			<p>anderson.alves.francisco@gmail.com | @andersonalvesfr</p>
+		</footer>
+	</body>
+</html>
